@@ -29,24 +29,24 @@ export const PROJECTS =
 
 export const TECH_SKILLS = [
   {
-    image: '/skills/golang.png',
-    title: "Golang & Cloud",
-    description: "Programming Language"
+    image: '/skills/webdevolpement.png',
+    title: "FullStack Web develoment",
+    description: "Creatings portfolios, SPAs, Ecommerce , and Custom business websites"
   },
   {
-    image: "/skills/nextjs.png",
-    title: "NextJS",
-    description: "Fullstack Framework",
+    image: "/skills/systemarchi.png",
+    title: "System Design",
+    description: "Building distrubated systems for the client.",
   },
   {
     image: "/skills/figma.png",
     title: "Figma Design",
-    description: "Pesign Tool",
+    description: "Design",
   },
   {
     image: "/skills/stripe.png",
     title: "Stripe",
-    description: "Payment Gateaway"
+    description: "Payment Gateaway & Adding Custom Webhooks"
   },
   {
     image: "/skills/n8n.png",
@@ -58,4 +58,37 @@ export const TECH_SKILLS = [
     title: "SQL and Caching",
     description: "Database modelization with Ai research"
   },
+]
+
+export const EXP = [
+  {
+    image: "/exp/fisto.png",
+    title: "FISTO",
+    slogan: "TechLead Reperesentative in IT Club",
+    done: [
+      "Joined in Workshop activities",
+      "Joined in 4+ Hackathons",
+      "Contributing to open source projects"
+    ]
+  },
+  {
+    image: "/exp/amastroy.png",
+    title: "AMASTROY",
+    slogan: "SaaS for Optimized tender and offre calls semantic search",
+    done: [
+      "Building the Local VPS for the project",
+      "Built the Web App, Currently Building the mobile view and the desktop App",
+      "Planning the scaling architecture for the web app"
+    ]
+  },
+  {
+    image: "/exp/hustle.png",
+    title: "FREELANCE",
+    slogan: "Distrubiting Custom SaaS and SPA",
+    done: [
+      "Built mathéconfiance: A teacher platform where student can learn with the professeur",
+      "Built Amarchi portfolio Page",
+      "Building Agentic Ai template for cevil engineers - Ongoing"
+    ]
+  }
 ]

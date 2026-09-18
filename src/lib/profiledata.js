@@ -4,7 +4,7 @@ export const ME = {
   passion: "passionate about creating intuitive engaging user experiences. specialize in transforming ideas into real engineered systems",
   years_experience: 2,
   projects_complet: 5,
-  email: "",
+  email: "amaramohammedali42@gmail.com",
   github: "https://github.com/Alilacream",
   linkdin: "https://www.linkedin.com/in/mohammed-ali-amara-429041375/",
 }
@@ -29,40 +29,40 @@ export const PROJECTS =
 
 export const TECH_SKILLS = [
   {
-    image: '/skills/webdevolpement.png',
+    image: '/skills/webdev.png',
     title: "FullStack Web develoment",
-    description: "Creatings portfolios, SPAs, Ecommerce , and Custom business websites"
+    skill: "Creatings portfolios, SPAs, Ecommerce , and Custom business websites"
   },
   {
-    image: "/skills/systemarchi.png",
+    image: "/skills/systemarchi.jpg",
     title: "System Design",
-    description: "Building distrubated systems for the client.",
+    skill: "Building distrubated systems for the client.",
   },
   {
-    image: "/skills/figma.png",
+    image: "/skills/design.png",
     title: "Figma Design",
-    description: "Design",
+    skill: "Design",
   },
   {
     image: "/skills/stripe.png",
     title: "Stripe",
-    description: "Payment Gateaway & Adding Custom Webhooks"
+    skill: "Payment Gateaway & Adding Custom Webhooks"
   },
   {
     image: "/skills/n8n.png",
     title: "N8N",
-    description: "Automation & ChatBot"
+    skill: "Automation & ChatBot"
   },
   {
     image: "/skills/data.png",
     title: "SQL and Caching",
-    description: "Database modelization with Ai research"
+    skill: "Database modelization with Ai research"
   },
 ]
 
 export const EXP = [
   {
-    image: "/exp/fisto.png",
+    span: "21 Jan 2026 - 07 Juin 2026",
     title: "FISTO",
     slogan: "TechLead Reperesentative in IT Club",
     done: [
@@ -72,7 +72,7 @@ export const EXP = [
     ]
   },
   {
-    image: "/exp/amastroy.png",
+    span: "03 Mar 2025 - UNTIL NOW",
     title: "AMASTROY",
     slogan: "SaaS for Optimized tender and offre calls semantic search",
     done: [
@@ -82,7 +82,7 @@ export const EXP = [
     ]
   },
   {
-    image: "/exp/hustle.png",
+    span: "17 Juil 2026 - UNTIL NOW",
     title: "FREELANCE",
     slogan: "Distrubiting Custom SaaS and SPA",
     done: [

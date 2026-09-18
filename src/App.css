@@ -1,12 +1,20 @@
 @import 'index.css';
+@import './style/Experience.css';
 
+@import './style/Skill.css';
 .title{
  color: var(--hard-text);
  font-weight: 700;
+ font-style: bold;
 }
 
 .highlight {
   color: var(--soft-text)
+}
+
+.section-heading {
+  font-size: 90px;
+  font-weight: 700;
 }
 
 .navbar {
@@ -16,7 +24,6 @@
   justify-content: space-between;
   padding: 1rem 2rem;
   gap: 1.5rem;
-  position: sticky;
   top: 0;
 }
 .navbar a{
@@ -33,7 +40,9 @@
   justify-content: center;
 }
 .footer span:hover{
-  color: var(--lime)
+  color: var(--lime);
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+  text-decoration: underline;
 }
 
 .years-exp {
@@ -97,3 +106,4 @@
 .user-slogan {
   font-weight: 500
 }
+

@@ -1,0 +1,32 @@
+
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, minmax(200px; 500px));
+  gap: 40px;
+}
+
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 40px;
+}
+.skill-img{
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+}
+
+.skill-title{
+  font-weight: 700;  
+  font-size: 24px
+}
+.skill {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.skill-desc {
+  font-weight: 70;
+}

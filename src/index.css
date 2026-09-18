@@ -24,3 +24,16 @@ body {
 .unfocused{
   color: var(--soft-text);
 }
+
+::-webkit-scrollbar {
+  color: var(--prim-black)
+}
+
+::-webkit-scrollbar-button {
+  color: var(--prim-black)
+
+}
+
+::-webkit-scrollbar-thumb {
+  color: var(--lime)
+}

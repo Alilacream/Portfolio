@@ -12,7 +12,7 @@ const Links = () => {
       <a href={molsite.github}>
         <IconBrandGithub className="github-button" color="lime" />
       </a>
-      <a href={molsite.linkedin}>
+      <a href={molsite.linkdin}>
         <IconBrandLinkedin className="linkedin-button" />
       </a>
     </div>

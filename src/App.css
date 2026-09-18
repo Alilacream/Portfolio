@@ -1,0 +1,52 @@
+@import 'index.css';
+
+.title{
+ color: var(--hard-text);
+ font-weight: 700;
+}
+
+.highlight {
+  color: var(--soft-text)
+}
+
+.navbar {
+  border: 2px solid var(--prim-black);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  gap: 1.5rem;
+  position: sticky;
+  top: 0;
+}
+.navbar a{
+  color: var(--prim-black);
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+.navbar a:hover{
+  background-color: var(--lime);
+  color: white;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+.footer span:hover{
+  color: var(--lime)
+}
+
+.years-exp {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+}
+.year-num {
+  font-size: 50px;
+  font-weight: 700;
+}
+.year-label{
+  font-size: 20px;
+  color: var(--soft-text)
+}

@@ -1,0 +1,23 @@
+:root {
+  --prim-bg: #FFFFFF;
+  --prim-black: #333;
+  --hard-text: #0D0D0D; 
+  --soft-text: #969696;
+  --lime: #40D22D;
+}
+
+body {
+  background: var(--prim-bg);
+  margin: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;   /* horizontal centering, page still grows downward */
+  padding: 50px;    /* equal space on all sides */
+  box-sizing: border-box;
+}
+

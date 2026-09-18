@@ -9,24 +9,93 @@
 
 .skills-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 40px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
 }
 .skill-img{
-  width: 80px;
-  height: 80px;
-  border-radius: 20px;
+  width: 56px;
+  height: 56px;
+  flex: 0 0 auto;
+  border-radius: 14px;
+  object-fit: cover;
 }
 
 .skill-title{
-  font-weight: 700;  
-  font-size: 24px
+  font-weight: 700;
+  font-size: 19px;
 }
 .skill {
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 20px;
+  background: #ffffff;
+  border: 1.5px solid #ECECEC;
+  border-radius: 20px;
+  padding: 24px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.skill:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.1);
+  border-color: var(--lime);
 }
 .skill-desc {
-  font-weight: 70;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--soft-text);
+  margin-top: 4px;
+}
+
+/* the first skill becomes the big bento feature tile */
+.skill:nth-child(1) {
+  grid-column: span 2;
+  grid-row: span 2;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: #0d0d0d;
+  border: none;
+  border-radius: 28px;
+  padding: 36px;
+  position: relative;
+  overflow: hidden;
+}
+.skill:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--lime);
+}
+.skill:nth-child(1) .skill-img {
+  width: 64px;
+  height: 64px;
+  background: #ffffff;
+}
+.skill:nth-child(1) .skill-title {
+  color: #ffffff;
+  font-size: 28px;
+}
+.skill:nth-child(1) .skill-desc {
+  color: #b5b5b5;
+  font-size: 16px;
+  max-width: 380px;
+}
+
+/* System Design, N8N and SQL & Caching run the full width of a row */
+.skill:nth-child(2),
+.skill:nth-child(5),
+.skill:nth-child(6) {
+  grid-column: span 2;
+}
+
+/* Figma Design and Stripe stay square: icon stacked over centered text */
+.skill:nth-child(3),
+.skill:nth-child(4) {
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
 }

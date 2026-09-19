@@ -1,4 +1,4 @@
-import { IconBrandGithub, IconBrandLinkedin, IconEmailStamp } from "@tabler/icons-react";
+import { IconBrandGithub, IconBrandLinkedin, IconMail } from "@tabler/icons-react";
 
 import { ME } from '../../lib/profiledata.js'
 const Links = () => {
@@ -7,13 +7,13 @@ const Links = () => {
   return (
     <div className="my-links">
       <a href={molsite.email}>
-        <IconEmailStamp className="email-button" color="lime" />
+        <IconMail className="email" />
       </a>
       <a href={molsite.github}>
-        <IconBrandGithub className="github-button" color="lime" />
+        <IconBrandGithub className="github" />
       </a>
       <a href={molsite.linkdin}>
-        <IconBrandLinkedin className="linkedin-button" />
+        <IconBrandLinkedin className="linkedin" />
       </a>
     </div>
   )

@@ -30,6 +30,7 @@
 .navbar a{
   color: var(--prim-black);
   transition: background-color 0.2s ease-in, color 0.2s ease-in;
+  border-radius: 50% 20%
 }
 .navbar a:hover{
   background-color: var(--lime);
@@ -90,16 +91,24 @@
   border-radius: 16px;
 }
 
-.my-links{
-  color: var(--lime);
+.my-links  {
   display: flex;
   justify-content: center;
   gap: 20px
 }
 
-.email-button:hover {
-  color: var(--prim-white)
-  
+
+.my-links > * {
+  color: var(--lime)
+}
+
+.my-links a {
+  background-color: white;
+  padding: 0.5em;
+  border-radius: 50%;
+}
+.my-links a::before {
+  content: 'Twitter';
 }
 .user-name {
   font-weight: 1500

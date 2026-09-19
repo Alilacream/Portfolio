@@ -1,7 +1,8 @@
 @import 'index.css';
 @import './style/Experience.css';
-
 @import './style/Skill.css';
+@import './style/Project.css';
+
 .title{
  color: var(--hard-text);
  font-weight: 700;

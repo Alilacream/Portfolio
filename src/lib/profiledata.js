@@ -14,16 +14,18 @@ export const PROJECTS =
       name: "Amastroy",
       slogan: "Public & Private Tender Semantic Search, Ai reccomendation ",
       image: "/projects/amastroy.png",
+      launch: "https://amastroy.com"
     },
     {
       name: "Amarchi",
       slogan: "Portfolio for an architect solo founder",
-      image: "/projects/amarchi.png"
+      image: "/projects/amarchi.png",
+      launch: "https://amarchi.vercel.app/"
     },
     {
       name: "MathéConfience",
       slogan: "Web App for online teaching and student progress tracking",
-      image: "/projects/mathconf.png",
+      image: "/projects/math.png",
     }
   ];
 

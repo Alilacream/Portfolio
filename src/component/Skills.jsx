@@ -1,6 +1,5 @@
-import { TECH_SKILLS } from "../lib/profiledata"
-const Skills = () => {
-  const DomDisplay = TECH_SKILLS.map(item => {
+const Skills = ({ skills }) => {
+  const DomDisplay = skills.map(item => {
     return (
       <div className="skill">
         <img src={item.image} alt="skill" className="skill-img" />

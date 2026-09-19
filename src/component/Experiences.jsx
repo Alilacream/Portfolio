@@ -1,13 +1,12 @@
 
-import { EXP } from "../lib/profiledata"
 
 function ListOFActivity(array) {
   return array.map(e => {
     return (<li>{e}</li>)
   })
 }
-const Experiences = () => {
-  const DomDisplay = EXP.map(item => {
+const Experiences = ({ experiences }) => {
+  const DomDisplay = experiences.map(item => {
     return (<div className="exp-card">
       <h3 className="exp-title">{item.title}</h3>
       <p className="exp-slogan">{item.slogan}</p>

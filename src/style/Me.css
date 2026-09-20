@@ -1,0 +1,31 @@
+.me {
+  background-color: #000000;
+  box-sizing: border-box; 
+  display: flex;
+  width: 350px;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  justify-items: center;
+  border-radius: 20px;
+  position: fixed;
+  top: 77px;
+  left: 45px;
+}
+
+.me-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  color: white;
+
+}
+@media(max-width: 480px)
+.me {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 1fr;
+  height: 1fr;
+}

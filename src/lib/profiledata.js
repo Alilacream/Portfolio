@@ -32,18 +32,18 @@ export const PROJECTS =
 export const TECH_SKILLS = [
   {
     image: '/skills/webdev.png',
-    title: "FullStack Web develoment",
-    skill: "Creatings portfolios, SPAs, Ecommerce , and Custom business websites"
+    title: "FullStack Web/Native Developement",
+    skill: "Creating Portfolios, SPAs, Ecommerce , and Custom Business Websites. Turn your Imagination into a real product"
   },
   {
     image: "/skills/systemarchi.jpg",
     title: "System Design",
-    skill: "Building distrubated systems for the client.",
+    skill: "Building high performance distrubated systems  for the client.",
   },
   {
     image: "/skills/design.png",
     title: "Figma Design",
-    skill: "Design",
+    skill: "Intuiative Custom Design",
   },
   {
     image: "/skills/stripe.png",
@@ -53,12 +53,12 @@ export const TECH_SKILLS = [
   {
     image: "/skills/n8n.png",
     title: "N8N",
-    skill: "Automation & ChatBot"
+    skill: "Automated Custom Pipeline, Custom ChatBot or Agent"
   },
   {
     image: "/skills/data.png",
     title: "SQL and Caching",
-    skill: "Database modelization with Ai research"
+    skill: "Database modelization with Ai search, and Caching for optimization"
   },
 ]
 

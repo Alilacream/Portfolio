@@ -2,7 +2,7 @@
 @import './style/Experience.css';
 @import './style/Skill.css';
 @import './style/Project.css';
-
+@import './style/Me.css';
 .title{
  color: var(--hard-text);
  font-weight: 700;
@@ -61,29 +61,7 @@
   font-size: 20px;
   color: var(--soft-text)
 }
-.me {
-  background-color: #000000;
-  box-sizing: border-box; 
-  display: flex;
-  width: 350px;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px 20px;
-  justify-items: center;
-  border-radius: 20px;
-  position: fixed;
-  top: 77px;
-  left: 45px;
-}
 
-.me-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  color: white;
-
-}
 
 .user-img {
   width: 239px;
@@ -106,9 +84,51 @@
   background-color: white;
   padding: 0.5em;
   border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .my-links a::before {
-  content: 'Twitter';
+  content: attr(data-social);
+  position: absolute;
+  background-color: var(--acent-color);
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+  transform: translateY(-34px;) rotate(25deg);
+  opacity: 0;
+  transition: 200ms cubic-bezier(.42,0,.44,1.64);
+}
+.my-links a:hover {
+  background-color: var(--acent-color);
+  color: white;
+}
+.my-links a::after {
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid var(--acent-color);
+  transform: translateY(-45px) rotate(25deg);
+  opacity: 0;
+  transition: 200ms cubic-bezier(.42,0,.44,1.64);
+}
+.my-links a:hover::before {
+  transform: translateY(-65px) rotate(0);
+  opacity: 1;
+
+}
+.my-links a:hover::after{
+  transform: translateY(-45px) rotate(0);
+  opacity: 1;
 }
 .user-name {
   font-weight: 1500

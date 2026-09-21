@@ -7,7 +7,11 @@ const Projects = ({ projects }) => {
   const DomDisplay = projects.map(project => (
     <div className="project">
 
-      {project.launch?.trim() && <IconArrowNarrowRight onClick={() => CheckWebsite(project.launch)} className='arrow-link' />}
+      {project.launch?.trim() &&
+        <button type="submit" className='glass-button' check={project.name}>
+          <IconArrowNarrowRight onClick={() => CheckWebsite(project.launch)} className='arrow-link' />
+        </button>
+      }
       <img src={project.image} className='project-image' />
       <div className='project-text-container'>
 

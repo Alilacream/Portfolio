@@ -6,13 +6,13 @@ const Links = () => {
 
   return (
     <div className="my-links">
-      <a data-social="mail" style={{ "--acent-color": "red" }} href={molsite.email}>
+      <a data-social="Mail" style={{ "--acent-color": "red" }} href={molsite.email}>
         <IconMail className="email" />
       </a>
-      <a data-social="github" style={{ "--acent-color": "#333" }} href={molsite.github}>
+      <a data-social="Github" style={{ "--acent-color": "#333" }} href={molsite.github}>
         <IconBrandGithub className="github" />
       </a>
-      <a data-social="linkedin" style={{ "--acent-color": "#106bff" }} href={molsite.linkdin}>
+      <a data-social="Linkedin" style={{ "--acent-color": "#106bff" }} href={molsite.linkdin}>
         <IconBrandLinkedin className="linkedin" />
       </a>
     </div>

@@ -21,12 +21,12 @@
 }
 
 /* ===== 480px and up = DESKTOP ===== */
-@media (min-width: 780px) {
+@media (min-width: 1080px) {
   .me {
     position: fixed;
     top: 77px;
     left: 45px;
     width: 450px;
-  width: 350px;
+    width: 350px;
   }
 }

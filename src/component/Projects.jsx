@@ -1,10 +1,14 @@
 
 import { IconArrowNarrowRight } from '@tabler/icons-react';
+import Hover from '../transition/Hover';
+import OnSlide from '../transition/OnSlide';
 function CheckWebsite(targetUrl) {
   window.open(targetUrl, '_blank')
 }
 const Projects = ({ projects }) => {
   const DomDisplay = projects.map(project => (
+    <Hover>
+
     <div className="project">
 
       {project.launch?.trim() &&
@@ -19,10 +23,17 @@ const Projects = ({ projects }) => {
         <p>{project.slogan}</p>
       </div>
     </div>
+      </Hover>
   ))
   return (
     <>
-      <h2 className="section-heading">PROJECTS<br /> <span className="highlight">REALIZED</span></h2>
+    <OnSlide direction='right'>
+      <h2 className="section-heading">PROJECTS<br /> 
+      <OnSlide direction='left'>
+      <span className="highlight">REALIZED</span>
+      </OnSlide>
+      </h2>
+    </OnSlide>
       <div className='project-wrapper'>
         {DomDisplay}
       </div>

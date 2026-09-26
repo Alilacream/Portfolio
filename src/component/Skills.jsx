@@ -1,3 +1,5 @@
+import OnSlide from "../transition/OnSlide"
+
 const Skills = ({ skills }) => {
   const DomDisplay = skills.map(item => {
     return (
@@ -13,7 +15,13 @@ const Skills = ({ skills }) => {
   })
   return (
     <div className="skills-container">
-      <h2 className="section-heading">TECHNICAL <br /> <span className="highlight">SKILLS</span></h2>
+      <OnSlide direction="right">
+      <h2 className="section-heading">TECHNICAL <br /> 
+      <OnSlide>
+      <span className="highlight">SKILLS</span>
+      </OnSlide>
+      </h2>
+      </OnSlide>
       <div className="skills-grid">
         {DomDisplay}
       </div>

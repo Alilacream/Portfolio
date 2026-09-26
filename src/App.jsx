@@ -7,7 +7,8 @@ import Skills from './component/Skills'
 import Experiences from './component/Experiences'
 import WhatsappButton from './component/ui/WhatsappButton'
 import Projects from './component/Projects'
-import { ME, TECH_SKILLS, PROJECTS, EXP } from './lib/profiledata'
+import {  TECH_SKILLS, PROJECTS, EXP } from './lib/profiledata'
+
 function App() {
   return (
     <div className="container">

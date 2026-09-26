@@ -1,3 +1,4 @@
+import OnSlide from "../transition/OnSlide"
 
 
 function ListOFActivity(array) {
@@ -19,7 +20,14 @@ const Experiences = ({ experiences }) => {
   })
   return (
     <div className="skills-container">
-      <h2 className="section-heading">+2 YEARS OF <br /> <span className="highlight">EXPERIENCE</span></h2>
+      <OnSlide direction="right">
+      <h2 className="section-heading">
+        +2 YEARS OF <br /> 
+        <OnSlide direction="left">
+        <span className="highlight">EXPERIENCE</span>
+        </OnSlide>
+        </h2>
+      </OnSlide>
       {DomDisplay}
     </div>
   )
